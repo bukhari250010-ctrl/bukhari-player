@@ -17,7 +17,7 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
 
-    - name: Build with Gradle
+    - name: Build Debug APK
       run: |
         gradle wrapper --gradle-version 8.5
         chmod +x gradlew || true
