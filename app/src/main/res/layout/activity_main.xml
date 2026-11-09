@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <!-- Video Surface View -->
+    <androidx.media3.ui.PlayerView
+        android:id="@+id/player_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false"
+        android:focusable="false"
+        app:use_controller="false"
+        xmlns:app="http://schemas.android.com/apk/res-auto" />
+
+    <!-- একবার টাচ করলেই সাথে সাথে Play/Pause হওয়ার সেনসিটিভ ওভারলে -->
+    <View
+        android:id="@+id/touch_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <!-- শুধুমাত্র স্পিড কন্ট্রোল বাটন (কোনো টাইম বার বা অন্য জঞ্জাল নেই) -->
+    <Button
+        android:id="@+id/btn_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:text="1.0x"
+        android:textColor="#FFFFFF"
+        android:background="#44000000"
+        android:textSize="14sp" />
+
+</RelativeLayout>
