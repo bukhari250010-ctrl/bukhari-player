@@ -30,7 +30,7 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.9.0'
     
-    // ExoPlayer (4K থেকে 240p সব ভিডিওর জন্য)
-    implementation 'androidx.media3:media3-exoplayer:1.1.1'
-    implementation 'androidx.media3:media3-ui:1.1.1'
+    // ExoPlayer Framework
+    implementation 'androidx.media3:media3-exoplayer:1.2.0'
+    implementation 'androidx.media3:media3-ui:1.2.0'
 }
